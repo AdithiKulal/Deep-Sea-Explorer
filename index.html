@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Sea Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#creatures">Learn</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <img src="hero-image.jpg.jpeg" alt="Hero Image">
+            <h1>Welcome to Deep Sea Explorer</h1>
+            <p>Dive into the unknown and discover the secrets of the deep sea.</p>
+            <button class="button" onclick="openModal('modal-1')">Start Your Journey</button>
+            <div id="modal-1" class="modal">
+                <div class="modal-content">
+                    <h2>Start Your Journey</h2>
+                    <p>Welcome to the deep sea explorer! You're about to embark on an epic journey to explore the unknown depths of the ocean.</p>
+                    <button class="button" onclick="closeModal('modal-1')">Let's Dive In!</button>
+                </div>
+            </div>
+        </section>
+        <section id="explore" class="explore">
+            <img src="explore-image.jpg.jpeg" alt="Explore Image">
+            <h2>Explore the Deep Sea</h2>
+            <p>Learn about the different ecosystems and features of the deep sea.</p>
+            <button class="button learn-more-button" onclick="openModal('modal-2')">Learn More</button>
+        </section>
+        <section id="creatures" class="creatures">
+            <img src="creatures-image.jpg.jpeg" alt="Creatures Image">
+            <h2>Deep Sea Creatures</h2>
+            <p>Discover the unique and fascinating creatures that call the deep sea home.</p>
+            <button class="button learn-more-button" onclick="openModal('modal-3')">Learn More</button>
+        </section>
+        <section id="conservation" class="conservation">
+            <img src="conservation-image.jpg.jpeg" alt="Conservation Image">
+            <h2>Ocean Conservation</h2>
+            <p>Learn about the importance of ocean conservation and how you can help.</p>
+            <button class="button learn-more-button" onclick="openModal('modal-4')">Learn More</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Deep Sea Explorer</p>
+    </footer>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <h2>Learn More About the Deep Sea</h2>
+            <p>"The deep sea is a vast and largely unexplored frontier, covering over 70% of our planet. It's a world of incredible
+            diversity, with towering mountain ranges, deep trenches, and vast plains of soft sediment. The deep sea is also home to
+            an incredible array of marine life, from giant squid and deep-sea fish to coral and other invertebrates. Despite its
+            importance, the deep sea remains a mysterious and largely unexplored environment, with new species and ecosystems still
+            being discovered regularly."</p>
+            <button class="button" onclick="closeModal('modal-2')">Close</button>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <h2>Learn More About Deep Sea Creatures</h2>
+            <p>"The deep sea is home to an incredible array of bizarre and fascinating creatures. From the giant squid, with its
+            massive tentacles and glowing eyes, to the anglerfish, with its lure-like appendage on its head, deep-sea creatures have
+            evolved remarkable adaptations to survive in the harsh, dark environment of the deep sea. Other notable creatures
+            include the vampire squid, with its glowing red eyes, and the colossal squid, which is thought to be one of the largest
+            invertebrates on Earth. These creatures continue to inspire scientific study and wonder."</p>
+            <button class="button" onclick="closeModal('modal-3')">Close</button>
+        </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <h2>Learn More About Ocean Conservation</h2>
+            <p>"The ocean plays a vital role in regulating the Earth's climate, providing half of the oxygen we breathe, and serving as
+            a source of food for billions of people. However, the ocean is facing numerous threats, including pollution,
+            overfishing, and climate change. Ocean conservation is essential to protect marine ecosystems, preserve biodiversity,
+            and promote sustainable use of ocean resources. By supporting conservation efforts, reducing plastic waste, and making
+            informed choices about seafood and other ocean-related products, individuals can contribute to the protection of the
+            ocean and its inhabitants for future generations."</p>
+            <button class="button" onclick="closeModal('modal-4')">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
